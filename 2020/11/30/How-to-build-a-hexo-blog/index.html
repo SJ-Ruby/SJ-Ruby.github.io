@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>How to build a hexo blog | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="INTRODUCTIONHexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。 一、环境配置 Node.js  git   二、安装Hexo1$ npm install -g hexo-cli    三、建立123$ hexo init &lt;文件夹&gt;$ cd &lt;文件夹&gt;$ npm install    文件夹内容 _config.yml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to build a hexo blog">
+<meta property="og:url" content="http://example.com/2020/11/30/How-to-build-a-hexo-blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="INTRODUCTIONHexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。 一、环境配置 Node.js  git   二、安装Hexo1$ npm install -g hexo-cli    三、建立123$ hexo init &lt;文件夹&gt;$ cd &lt;文件夹&gt;$ npm install    文件夹内容 _config.yml">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2020/11/30/cjiR1Zh6fAlNpWw.png">
+<meta property="article:published_time" content="2020-11-30T10:38:21.000Z">
+<meta property="article:modified_time" content="2020-11-30T14:50:56.462Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="personal data">
+<meta property="article:tag" content="author:Ruby_sj">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/11/30/cjiR1Zh6fAlNpWw.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-How-to-build-a-hexo-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/30/How-to-build-a-hexo-blog/" class="article-date">
+  <time datetime="2020-11-30T10:38:21.000Z" itemprop="datePublished">2020-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      How to build a hexo blog
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h3><p>Hexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。</p>
+<h3 id="一、环境配置"><a href="#一、环境配置" class="headerlink" title="一、环境配置"></a>一、环境配置</h3><ul>
+<li><p>Node.js</p>
+</li>
+<li><p>git</p>
+</li>
+</ul>
+<h3 id="二、安装Hexo"><a href="#二、安装Hexo" class="headerlink" title="二、安装Hexo"></a>二、安装Hexo</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> npm install <span class="literal">-g</span> hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="三、建立"><a href="#三、建立" class="headerlink" title="三、建立"></a>三、建立</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo init &lt;文件夹&gt;</span><br><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> &lt;文件夹&gt;</span><br><span class="line"><span class="variable">$</span> npm install</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>文件夹内容</strong><br><img src="https://i.loli.net/2020/11/30/cjiR1Zh6fAlNpWw.png" alt="image.png"></p>
+<p><strong><em>_config.yml</em></strong>    网站配置文件</p>
+<p><strong><em>package.json</em></strong>    应用程序数据。EJS、Stylus和Markdown渲染器是默认安装的。</p>
+<p><strong><em>scaffolds</em></strong>    脚手架文件夹。当创建一个新的帖子时，Hexo会将新文件建立在脚手架上。</p>
+<p><strong><em>source</em></strong>    源文件夹。放置网站内容的地方。Hexo 忽略隐藏的文件和名称前缀为 _（下划线）的文件或文件夹 - _posts 文件夹除外。可渲染的文件（如Markdown、HTML）将被处理并放入公共文件夹，而其他文件将被简单复制。</p>
+<p><strong><em>themes</em></strong>    主题文件夹。Hexo通过将网站内容与主题相结合，生成一个静态网站。、</p>
+<h3 id="四、配置"><a href="#四、配置" class="headerlink" title="四、配置"></a>四、配置</h3><p>可以在**<em>_config.yml**</em>中修改大部分的配置，详见<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration.html">https://hexo.io/zh-cn/docs/configuration.html</a></p>
+<h3 id="五、指令"><a href="#五、指令" class="headerlink" title="五、指令"></a>五、指令</h3><p><strong>init</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo init [<span class="type">folder</span>]</span><br></pre></td></tr></table></figure>
+
+<p>初始化一个网站。如果没有提供文件夹，Hexo 将在当前目录下建立一个网站。</p>
+<!-- 该命令是运行以下步骤的快捷方式。-->
+
+<!-- Git克隆hexo-starter包括hexo-theme-landscape到当前目录或指定的目标文件夹。-->
+<!-- 使用包管理器安装依赖项。Yarn 1、pnpm或npm，以安装的为准；如果安装了多个，优先级如列表所示。npm默认与Node.js捆绑在一起。-->
+
+
+
+<p><strong>new</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo new [<span class="type">layout</span>] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<p>创建一个新的文章。如果没有提供布局<code>layout</code>，Hexo 将使用 _config.yml 的默认布局。如果标题<code>title</code>包含空格，用引号将其包围。</p>
+<p>默认情况下，Hexo 将使用标题来定义文件的路径。对于页面，它将创建一个该名称的目录，并在其中创建一个index.md文件。使用 –path 选项可覆盖该行为并定义文件路径。</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo new page -<span class="literal">-path</span> about/me <span class="string">&quot;About me&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>将创建source/about/me.md文件，并在前面设置标题 “关于我”。</p>
+<p><strong>PS</strong>:标题是强制性的。例如，这将不会导致你所期望的行为。</p>
+<p><strong>generate</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>生成静态文件。</p>
+<p><strong>publish</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo publish [<span class="type">layout</span>] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>发布草案。</p>
+<p><strong>server</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo server</span><br></pre></td></tr></table></figure>
+
+<p>启动一个本地服务器。默认情况下，这是<a target="_blank" rel="noopener" href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a></p>
+<p><strong>deploy</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>部署网站。</p>
+<p><strong>render</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo render &lt;file1&gt; [<span class="type">file2</span>] ...</span><br></pre></td></tr></table></figure>
+
+<p>渲染文件。</p>
+<p><strong>migrate</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>从其他博客系统迁移内容。</p>
+<p><strong>clean</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>清理缓存文件（db.json）和生成的文件（公开）。</p>
+<p><strong>list</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>列出所有路线。</p>
+<p><strong>safe</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo -<span class="literal">-safe</span></span><br></pre></td></tr></table></figure>
+
+<p>禁用加载插件和脚本。如果在安装新插件后遇到问题，可以试试这个。</p>
+<p><strong>debug</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo -<span class="literal">-debug</span></span><br></pre></td></tr></table></figure>
+
+<p>将详细的信息记录到终端和 debug.log。</p>
+<p><strong>draft</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo -<span class="literal">-draft</span></span><br></pre></td></tr></table></figure>
+
+<p>显示草稿的帖子（存储在source/_drafts文件夹中）。</p>
+<h3 id="六、写作"><a href="#六、写作" class="headerlink" title="六、写作"></a>六、写作</h3><p>要创建一个新的帖子或新的页面，可以运行以下命令。</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo new [<span class="type">layout</span>] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>LAYOUT</strong><br>Hexo 中有三种默认布局：帖子<code>post</code>、页面<code>page</code>和草稿<code>draft</code>。每种布局创建的文件都会保存到不同的路径。新创建的帖子保存在<code>source/_posts</code>文件夹中。</p>
+<p><strong>FILENAME</strong></p>
+<p>默认情况下，Hexo 使用帖子标题作为其文件名。您可以编辑 _config.yml 中的 new_post_name 设置来更改默认文件名。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/30/How-to-build-a-hexo-blog/" data-id="cki4o5m4300005gqfa0i30l9i" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/author-Ruby-sj/" rel="tag">author:Ruby_sj</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/personal-data/" rel="tag">personal data</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/11/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/author-Ruby-sj/" rel="tag">author:Ruby_sj</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/personal-data/" rel="tag">personal data</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/author-Ruby-sj/" style="font-size: 10px;">author:Ruby_sj</a> <a href="/tags/personal-data/" style="font-size: 10px;">personal data</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/11/30/How-to-build-a-hexo-blog/">How to build a hexo blog</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/30/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
