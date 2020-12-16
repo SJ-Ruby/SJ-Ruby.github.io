@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="personal data,author:Ruby_sj," />
+  <meta name="keywords" content="学习," />
 
 
 
@@ -94,19 +94,18 @@
 
 
 
-<meta name="description" content="简介Hexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。 一、环境配置 Node.js  git   二、安装Hexo1$ npm install -g hexo-cli    三、建立123$ hexo init &lt;文件夹&gt;$ cd &lt;文件夹&gt;$ npm install    文件夹内容 _config.yml    网站配置文件 p">
+<meta name="description" content="Hexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to build a hexo blog">
+<meta property="og:title" content="构建hexo博客">
 <meta property="og:url" content="http://example.com/2020/11/30/How-to-build-a-hexo-blog/index.html">
 <meta property="og:site_name" content="SJ&#39;s World">
-<meta property="og:description" content="简介Hexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。 一、环境配置 Node.js  git   二、安装Hexo1$ npm install -g hexo-cli    三、建立123$ hexo init &lt;文件夹&gt;$ cd &lt;文件夹&gt;$ npm install    文件夹内容 _config.yml    网站配置文件 p">
+<meta property="og:description" content="Hexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2020/11/30/cjiR1Zh6fAlNpWw.png">
 <meta property="article:published_time" content="2020-11-30T10:38:21.000Z">
-<meta property="article:modified_time" content="2020-12-14T08:28:05.132Z">
+<meta property="article:modified_time" content="2020-12-16T03:59:17.132Z">
 <meta property="article:author" content="Sheng Jie">
-<meta property="article:tag" content="personal data">
-<meta property="article:tag" content="author:Ruby_sj">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2020/11/30/cjiR1Zh6fAlNpWw.png">
 
@@ -143,7 +142,7 @@
 
 
 
-  <title>How to build a hexo blog | SJ's World</title>
+  <title>构建hexo博客 | SJ's World</title>
   
 
 
@@ -283,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">How to build a hexo blog</h1>
+          <h1 class="post-title" itemprop="name headline">构建hexo博客</h1>
         
 
         <div class="post-meta">
@@ -333,7 +332,11 @@
       
 
       
-        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>Hexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。</p>
+        <p>Hexo是一个功能强大的博客框架，可使用Markdown编写，Hexo将自动生成静态文件。</p>
+<a id="more"></a>
+
+
+
 <h3 id="一、环境配置"><a href="#一、环境配置" class="headerlink" title="一、环境配置"></a>一、环境配置</h3><ul>
 <li><p>Node.js</p>
 </li>
@@ -376,7 +379,7 @@
 <p>将创建source/about/me.md文件，并在前面设置标题 “关于我”。</p>
 <p><strong>PS</strong>:标题是强制性的。例如，这将不会导致你所期望的行为。</p>
 <p><strong>generate</strong></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo generate</span><br><span class="line"><span class="variable">$</span> hexo g</span><br></pre></td></tr></table></figure>
 
 <p>生成静态文件。</p>
 <p><strong>publish</strong></p>
@@ -384,13 +387,18 @@
 
 <p>发布草案。</p>
 <p><strong>server</strong></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo server</span><br><span class="line"><span class="variable">$</span> hexo s</span><br></pre></td></tr></table></figure>
 
 <p>启动一个本地服务器。默认情况下，这是<a target="_blank" rel="noopener" href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a></p>
 <p><strong>deploy</strong></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo deploy</span><br><span class="line"><span class="variable">$</span> hexo d</span><br></pre></td></tr></table></figure>
 
 <p>部署网站。</p>
+<p><strong>ps:</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo d</span><br><span class="line">提示错误：ERROR Deployer not found: git</span><br><span class="line"></span><br><span class="line">键   入：cnpm install -<span class="literal">-save</span> hexo<span class="literal">-deployer</span><span class="literal">-git</span></span><br></pre></td></tr></table></figure>
+
+
+
 <p><strong>render</strong></p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo render &lt;file1&gt; [<span class="type">file2</span>] ...</span><br></pre></td></tr></table></figure>
 
@@ -442,9 +450,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/personal-data/" rel="tag"># personal data</a>
-          
-            <a href="/tags/author-Ruby-sj/" rel="tag"># author:Ruby_sj</a>
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
           
         </div>
       
@@ -456,10 +462,6 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2020/11/30/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
             
           </div>
 
@@ -546,7 +548,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -559,7 +561,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">tags</span>
               
             </div>
@@ -607,7 +609,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">一、环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">3.</span> <span class="nav-text">二、安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%BB%BA%E7%AB%8B"><span class="nav-number">4.</span> <span class="nav-text">三、建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%85%8D%E7%BD%AE"><span class="nav-number">5.</span> <span class="nav-text">四、配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E6%8C%87%E4%BB%A4"><span class="nav-number">6.</span> <span class="nav-text">五、指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%86%99%E4%BD%9C"><span class="nav-number">7.</span> <span class="nav-text">六、写作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">一、环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">2.</span> <span class="nav-text">二、安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%BB%BA%E7%AB%8B"><span class="nav-number">3.</span> <span class="nav-text">三、建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">四、配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E6%8C%87%E4%BB%A4"><span class="nav-number">5.</span> <span class="nav-text">五、指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%86%99%E4%BD%9C"><span class="nav-number">6.</span> <span class="nav-text">六、写作</span></a></li></ol></div>
             
 
           </div>
