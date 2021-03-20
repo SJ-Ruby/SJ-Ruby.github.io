@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="学习," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="期末来了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库复习">
+<meta property="og:url" content="https://sj-ruby.github.io/2021/03/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:site_name" content="SJ&#39;s World">
+<meta property="og:description" content="期末来了">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2020/12/21/nlwQUaV61itZcj3.png">
+<meta property="og:image" content="https://i.loli.net/2020/12/21/lAiBdHgfk4JtSKI.png">
+<meta property="og:image" content="https://i.loli.net/2020/12/21/OmF9C24RcstfuDv.png">
+<meta property="og:image" content="https://i.loli.net/2020/12/21/8tujq2PKzwWHGEM.png">
+<meta property="og:image" content="https://i.loli.net/2020/12/21/Yp7LFPEz8gomJAu.png">
+<meta property="article:published_time" content="2021-03-20T10:38:21.000Z">
+<meta property="article:modified_time" content="2021-03-20T08:20:52.503Z">
+<meta property="article:author" content="Sheng Jie">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/12/21/nlwQUaV61itZcj3.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://sj-ruby.github.io/2021/03/20/数据库复习/"/>
+
+
+
+
+
+  <title>数据库复习 | SJ's World</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">SJ's World</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://sj-ruby.github.io/2021/03/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SJ's World">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数据库复习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-03-20T18:38:21+08:00">
+                2021-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <center><strong>期末来了</strong>
+<a id="more"></a>
+
+
+
+
+<h2 id="数据库基本概念"><a href="#数据库基本概念" class="headerlink" title="数据库基本概念"></a>数据库基本概念</h2><p>数据库技术是<strong>信息系统的核心和基础。</strong></p>
+<p>数据库技术是研究：</p>
+<ul>
+<li>如何科学地组织和存储数据</li>
+<li>如何高效地获取和维护数据</li>
+</ul>
+<p>四位获得图灵奖：</p>
+<p>“网状数据库之父” “DBTG之父” 查尔斯·巴赫曼</p>
+<p>“关系数据库之父” 埃德加·弗兰克·科德</p>
+<p> 詹姆斯·格雷  </p>
+<p>迈克尔·斯通布雷克</p>
+<p>1968年，IBM推出<strong>层次模型</strong></p>
+<p>1969年，美国数据系统语言协会数据库任务小组提出<strong>网状模型。</strong></p>
+<p>1970年，Codd提出<strong>关系模型</strong></p>
+<p>这三件工作奠定了<strong>现代数据库技术的基础</strong></p>
+<center><strong>数据库与其它课程的关系</strongs></center>
+
+<p><img src="https://i.loli.net/2020/12/21/nlwQUaV61itZcj3.png" alt="image.png"></p>
+<blockquote>
+<ul>
+<li><p><strong>信息</strong>是人们用以对客观世界直接进行描述的，可在人们之间进行传递的一些知识。</p>
+</li>
+<li><p>为了记载信息，人们使用各种各样的符号和它们的组合来表示信息，这些符号及其组合就是<strong>数据</strong>。</p>
+</li>
+<li><p>数据是信息的具体表示形式，信息是数据的有意义的表现。</p>
+</li>
+</ul>
+</blockquote>
+<p>数据是数据库中存储的基本对象。</p>
+<p><strong>数据处理</strong>经过了手工处理、机械处理和电子数据处理3个阶段。</p>
+<p>数据处理的核心问题是<strong>数据管理</strong>。</p>
+<h3 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h3><p>数据管理是利用计算机硬件和软件技术对数据进行有效的收集、存储、处理和应用的过程。其目的在于充分有效地发挥数据的作用。实现数据有效管理的关键是数据组织。</p>
+<p>数据管理经历了人工管理、文件系统、数据库系统三个发展阶段。</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">人工管理阶段</th>
+<th align="center">文件系统阶段</th>
+<th align="center">数据库系统阶段</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">软件背景</td>
+<td align="center">没有操作系统</td>
+<td align="center">有文件系统</td>
+<td align="center">有数据库管理系统</td>
+</tr>
+<tr>
+<td align="center">处理方式</td>
+<td align="center">批处理</td>
+<td align="center">联机实时处理、批处理</td>
+<td align="center">联机实时处理、分布处理、批处理</td>
+</tr>
+<tr>
+<td align="center">数据的共享程度</td>
+<td align="center">无共享，冗余度极大</td>
+<td align="center">共享性差，冗余度大</td>
+<td align="center">共享性高，冗余度小</td>
+</tr>
+<tr>
+<td align="center">数据的独立性</td>
+<td align="center">不独立，完全依赖于程序</td>
+<td align="center">独立性差</td>
+<td align="center">具有高度的物理独立性和一定的逻辑独立性</td>
+</tr>
+</tbody></table>
+<h3 id="数据结构化"><a href="#数据结构化" class="headerlink" title="数据结构化"></a>数据结构化</h3><p>整体数据的结构化是数据库的主要特征之一。</p>
+<p>数据独立性</p>
+<ul>
+<li>物理独立性<ul>
+<li>指用户的应用程序与存储在磁盘上的数据库中数据是相互独立的。当数据的物理存储改变了，应用程序不用改变。</li>
+</ul>
+</li>
+<li>逻辑独立性<ul>
+<li>指用户的应用程序与数据库的逻辑结构是相互独立的。数据的逻辑结构改变了，用户程序也可以不变。</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>数据库（Database）是<strong>长期</strong>储存在计算机内、有<strong>组织</strong>的、可<strong>共享</strong>的<strong>大量</strong>数据集合。</p>
+<p><strong>数据库特征</strong></p>
+<ul>
+<li>数据按一定的数据模型组织、描述和存储</li>
+<li>可为各种用户共享</li>
+<li>冗余度较小</li>
+<li>数据独立性较高</li>
+<li>易拓展</li>
+</ul>
+<h3 id="数据库管理系统"><a href="#数据库管理系统" class="headerlink" title="数据库管理系统"></a>数据库管理系统</h3><p>数据库管理系统（Database Management System）是位于用户和操作系统之间的一层数据管理软件。</p>
+<ul>
+<li><p>科学地组织和存储数据、高效地获取和维护数据</p>
+<table>
+<thead>
+<tr>
+<th align="center">功能</th>
+<th align="center">定义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">数据定义</td>
+<td align="center">DBMS提供数据定义语言DDL（Data Definition Language），供用户定义数据库的三级模式结构、两级映像以及完整性约束和保密限制等约束。DDL主要用于建立、修改数据库的库结构。DDL所描述的库结构仅仅给出了数据库的框架，数据库的框架信息被存放在数据字典（Data Dictionary）中。</td>
+</tr>
+<tr>
+<td align="center">数据操作</td>
+<td align="center">DBMS提供数据操作语言DML（Data Manipulation Language），供用户实现对数据的追加、删除、更新、查询等操作。</td>
+</tr>
+<tr>
+<td align="center">数据库的运行管理</td>
+<td align="center">数据库的运行管理功能是DBMS的运行控制、管理功能，包括多用户环境下的并发控制、安全性检查和存取限制控制、完整性检查和执行、运行日志的组织管理、事务的管理和自动恢复，即保证事务的原子性。这些功能保证了数据库系统的正常运行。</td>
+</tr>
+<tr>
+<td align="center">数据组织、存储与管理</td>
+<td align="center">DBMS要分类组织、存储和管理各种数据，包括数据字典、用户数据、存取路径等，需确定以何种文件结构和存取方式在存储级上组织这些数据，如何实现数据之间的联系。数据组织和存储的基本目标是提高存储空间利用率，选择合适的存取方法提高存取效率。</td>
+</tr>
+<tr>
+<td align="center">数据库的保护</td>
+<td align="center">DBMS对数据库的保护通过4个方面来实现：数据库的恢复、数据库的并发控制、数据库的完整性控制、数据库安全性控制。DBMS的其他保护功能还有系统缓冲区的管理以及数据存储的某些自适应调节机制等。</td>
+</tr>
+<tr>
+<td align="center">数据库的维护</td>
+<td align="center">数据库的数据载入、转换、转储、数据库的重组合重构以及性能监控等功能，这些功能分别由各个使用程序来完成。</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="数据库系统"><a href="#数据库系统" class="headerlink" title="数据库系统"></a>数据库系统</h3><ul>
+<li><p>数据库系统（Database System）是指在计算机系统中引入数据库后的系统构成。</p>
+</li>
+<li><p>在不引起混淆的情况下常常把数据库系统简称为数据库</p>
+</li>
+</ul>
+<ul>
+<li><strong>数据库系统的构成</strong><ul>
+<li>由数据库、操作系统、数据库管理系统、应用程序、数据库管理员、用户组成</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2020/12/21/lAiBdHgfk4JtSKI.png" alt="image.png"></p>
+<hr>
+<h2 id="数据库系统结构"><a href="#数据库系统结构" class="headerlink" title="数据库系统结构"></a>数据库系统结构</h2><h3 id="数据库系统的三级模式结构（内部的模式结构）"><a href="#数据库系统的三级模式结构（内部的模式结构）" class="headerlink" title="数据库系统的三级模式结构（内部的模式结构）"></a>数据库系统的三级模式结构（内部的模式结构）</h3><ul>
+<li><p>三级模式</p>
+<blockquote>
+<p>对数据的三个抽象级别</p>
+</blockquote>
+<ul>
+<li><p>模式</p>
+</li>
+<li><p>外模式</p>
+</li>
+<li><p>内模式</p>
+<p><img src="https://i.loli.net/2020/12/21/OmF9C24RcstfuDv.png" alt="image.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>二级映象</p>
+<blockquote>
+<p>在DBMS内部实现这三个抽象层次的联系和转换</p>
+</blockquote>
+<ul>
+<li>外模式 / 模式映象</li>
+<li>模式 / 内模式映象</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>型：对某一类数据的结构和属性的说明</p>
+<p>值：是型的一个具体赋值</p>
+</blockquote>
+<h4 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h4><p><strong>模式（Schema）</strong>是型的描述，反映的是数据的结构及其联系，模式是相对稳定的</p>
+<ul>
+<li>数据库中全体数据的逻辑结构和特征的描述</li>
+<li>所有用户的公共数据视图，综合了所有用户的需求</li>
+<li>一个数据库只有一个模式</li>
+<li>是数据库系统模式结构的中间层</li>
+</ul>
+<h4 id="外模式"><a href="#外模式" class="headerlink" title="外模式"></a>外模式</h4><blockquote>
+<p>保证数据库安全性的一个有力的措施，每个用户只能看见和访问所对应的外模式中的数据库。</p>
+</blockquote>
+<ul>
+<li><p>数据库用户使用的局部数据的逻辑结构和特征的描述</p>
+</li>
+<li><p>数据库用户的数据视角，是与某一应用有关的数据的逻辑表示</p>
+<ul>
+<li><p>模式和外模式的关系：<strong>一对多</strong></p>
+<blockquote>
+<p><strong>保证数据的逻辑独立性</strong></p>
+<ol>
+<li><p>当模式改变时，数据库管理员修改有关的外模式/模式映象，使外模式保持不变。</p>
+</li>
+<li><p>应用程序是依据数据的外模式编写的，从而应用程序不必修改，保证了数据与程序的逻辑独立性，简称数据的逻辑独立性。</p>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li>外模式通常是模式的子集</li>
+<li>一个数据库可以有读个外模式。反应了不同的用户的应用需求、看待数据的方式、对数据保密的要求</li>
+</ul>
+</li>
+<li><p>外模式和应用的关系：<strong>一对多</strong></p>
+<ul>
+<li>同一外模式也可以为某一用户的多个应用系统所使用</li>
+<li>一个应用程序只能使用一个外模式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="内模式"><a href="#内模式" class="headerlink" title="内模式"></a>内模式</h4><ul>
+<li><p>是数据物理结构和存储方式的描述</p>
+</li>
+<li><p>是数据在数据库内部的表示方式</p>
+</li>
+<li><p>一个数据库只有一个内模式</p>
+</li>
+<li><p>模式和内模式的关系：<strong>一对一</strong></p>
+<blockquote>
+<p><strong>保证数据的物理独立性</strong></p>
+<ol>
+<li>当数据库的存储结构改变了（例如选用了另一种存储结构），数据库管理员修改模式/内模式映象，使模式保持不变</li>
+<li>应用程序不受影响。保证了数据与程序的物理独立性，简称数据的物理独立性。</li>
+</ol>
+</blockquote>
+<ul>
+<li>定义了数据全局逻辑结构与存储结构之间的对应关系。</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库系统的体系结构（外部的体系结构）"><a href="#数据库系统的体系结构（外部的体系结构）" class="headerlink" title="数据库系统的体系结构（外部的体系结构）"></a>数据库系统的体系结构（外部的体系结构）</h3><ul>
+<li>单用户结构</li>
+<li>主次式结构</li>
+<li>分布式结构</li>
+<li>客户机/服务器结构</li>
+<li>浏览器/数据库服务器结构</li>
+</ul>
+<hr>
+<h2 id="数据模型——概念模型"><a href="#数据模型——概念模型" class="headerlink" title="数据模型——概念模型"></a>数据模型——概念模型</h2><blockquote>
+<ul>
+<li>用于信息世界的建模</li>
+<li>是现实世界到机器世界的一个中间层次。</li>
+<li>是数据库设计的有力工具</li>
+<li>数据库设计人员和用户之间进行交流的语言</li>
+</ul>
+</blockquote>
+<ul>
+<li>客观对象的抽象过程——<strong>两步抽象</strong><ul>
+<li>现实世界中的客观对象抽象为概念为<strong>概念模型</strong></li>
+<li>把概念模型转换为某一DBMS支持的<strong>数据模型</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2020/12/21/8tujq2PKzwWHGEM.png" alt="image.png"></p>
+<center>数据管理的三个世界与两次抽象</center>
+
+
+
+<ul>
+<li><p><strong>实体</strong>：显示世界中客观存在并可相互区别的事物。</p>
+</li>
+<li><p><strong>实体集</strong>：具有相同特性的实体集合。</p>
+</li>
+<li><p><strong>属性</strong>：属性是实体集中所有实体所具有共同特性的抽象描述。一个实体可以由若干个属性来描述。</p>
+</li>
+<li><p><strong>实体型</strong>：用实体名及其属性名集合来抽象和刻画同类实体，称为实体性。</p>
+</li>
+<li><p>*<em>属</em>-/+**</p>
+</li>
+<li><p>98526</p>
+</li>
+<li><p>3范围称为该属性的值域。</p>
+</li>
+<li><p><strong>实体的键</strong>：实体的码或关键字，是能唯一地标识实体集中每个实体的一个或一组属性。</p>
+</li>
+<li><p><strong>联系</strong>：现实世界中事物内部以及事物之间的联系在信息世界中反应为实体内部的联系和实体之间的联系。</p>
+</li>
+</ul>
+<h3 id="概念模型的表示方式"><a href="#概念模型的表示方式" class="headerlink" title="概念模型的表示方式"></a>概念模型的表示方式</h3><p>实体——联系方式（E-R）</p>
+<ul>
+<li><strong>实体集</strong><ul>
+<li>用矩形表示，矩形框内写明实体名</li>
+</ul>
+</li>
+<li><strong>属性</strong><ul>
+<li>用椭圆形表示，并用无向边将其与相应的实体连接起来</li>
+</ul>
+</li>
+<li><strong>联系</strong><ul>
+<li>联系本身：用菱形表示，菱形框内写明联系名，并用无向边分别与有关实体连接起来，同时在无向边旁标上联系的类型（1:1、1:n或m:n）</li>
+<li>联系的属性：联系本身也是一种实体型，也可以有属性。如果一个联系具有属性，则这些属性也要用无向边与该联系连接起来</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2020/12/21/Yp7LFPEz8gomJAu.png" alt="image.png"></p>
+<hr>
+<h3 id="测试题"><a href="#测试题" class="headerlink" title="测试题"></a>测试题</h3><ol>
+<li><p>在数据库的三级模式结构中，描述全体数据的逻辑结构和特征的是<strong>模式</strong>。</p>
+</li>
+<li><p>应用数据库的主要目的是为了<strong>共享数据问题</strong>。</p>
+</li>
+<li><p>数据库系统的核心是<strong>数据库管理系统</strong>。</p>
+</li>
+<li><p>数据库管理系统、操作系统、应用软件的层次关系从核心到外围是<strong>操作系统、数据库管理系统、应用软件</strong>。</p>
+</li>
+<li><p>数据库（DB）、数据库系统（DBS）和数据库管理系统（DBMS）之间的关系是<strong>DBS包括DB和DBMS</strong>。</p>
+</li>
+<li><p><strong>数据库</strong>是存储在计算机内的有组织的数据集合。</p>
+</li>
+<li><p>在数据库中，数据的物理独立性指的是<strong>应用程序与存储在磁盘上数据库中的数据相互独立</strong>。</p>
+</li>
+<li><p>下列四项中，不属于数据库特点的是<strong>数据冗余度高</strong>。</p>
+</li>
+<li><p>IBM公司的IMS数据库管理系统采用的数据模型是<strong>层次模型</strong>。</p>
+</li>
+<li><p>实现将现实世界抽象为信息世界的是<strong>概念模型</strong>。</p>
+<hr>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+  
+    <div>
+    
+      <div>
+    
+        <div style="text-align:center;color: #006000;font-size:18px;">-------------END-------------</div>
+    
+</div>
+
+    
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Sheng Jie
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://sj-ruby.github.io/2021/03/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/" title="数据库复习">https://sj-ruby.github.io/2021/03/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/03/08/JAVA%E5%AD%A6%E4%B9%A0/" rel="next" title="JAVA学习">
+                <i class="fa fa-chevron-left"></i> JAVA学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/03/20/leetcode%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93/" rel="prev" title="leetcode刷题总结">
+                leetcode刷题总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/head.jpg"
+               alt="" />
+          <p class="site-author-name" itemprop="name"></p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/SJ-Ruby" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">数据库基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86"><span class="nav-number">1.1.</span> <span class="nav-text">数据管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8C%96"><span class="nav-number">1.2.</span> <span class="nav-text">数据结构化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.4.</span> <span class="nav-text">数据库管理系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.5.</span> <span class="nav-text">数据库系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84"><span class="nav-number">2.</span> <span class="nav-text">数据库系统结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%B8%89%E7%BA%A7%E6%A8%A1%E5%BC%8F%E7%BB%93%E6%9E%84%EF%BC%88%E5%86%85%E9%83%A8%E7%9A%84%E6%A8%A1%E5%BC%8F%E7%BB%93%E6%9E%84%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">数据库系统的三级模式结构（内部的模式结构）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.1.1.</span> <span class="nav-text">模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%96%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.1.2.</span> <span class="nav-text">外模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.1.3.</span> <span class="nav-text">内模式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%88%E5%A4%96%E9%83%A8%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">数据库系统的体系结构（外部的体系结构）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E2%80%94%E2%80%94%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%9E%8B"><span class="nav-number">3.</span> <span class="nav-text">数据模型——概念模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E5%BC%8F"><span class="nav-number">3.1.</span> <span class="nav-text">概念模型的表示方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E9%A2%98"><span class="nav-number">3.2.</span> <span class="nav-text">测试题</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2020 - 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sheng Jie</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
