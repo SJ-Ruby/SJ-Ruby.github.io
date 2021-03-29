@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="ShengJie" />
+  <meta name="keywords" content="μC/OS-Ⅱ," />
 
 
 
@@ -94,13 +94,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="SJ&#39;s World">
-<meta property="og:url" content="https://sj-ruby.github.io/archives/2020/12/index.html">
+<meta name="description" content="冲冲冲！！！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识 μC&#x2F;OS-Ⅱ">
+<meta property="og:url" content="https://sj-ruby.github.io/2021/03/24/%E5%88%9D%E8%AF%86%CE%BCCOS-%E2%85%A1/index.html">
 <meta property="og:site_name" content="SJ&#39;s World">
+<meta property="og:description" content="冲冲冲！！！">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/03/24/ipU9awbLkVjnlGg.png">
+<meta property="article:published_time" content="2021-03-24T08:31:08.000Z">
+<meta property="article:modified_time" content="2021-03-25T15:01:30.431Z">
 <meta property="article:author" content="Sheng Jie">
+<meta property="article:tag" content="μC&#x2F;OS-Ⅱ">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/03/24/ipU9awbLkVjnlGg.png">
 
 
 
@@ -129,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="https://sj-ruby.github.io/archives/2020/12/"/>
+  <link rel="canonical" href="https://sj-ruby.github.io/2021/03/24/初识μCOS-Ⅱ/"/>
 
 
 
 
 
-  <title>Archive | SJ's World</title>
+  <title>初识 μC/OS-Ⅱ | SJ's World</title>
   
 
 
@@ -160,7 +167,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,74 +251,221 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 12 posts in total. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year motion-element" id="archive-year-2020">2020</h2>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://sj-ruby.github.io/2021/03/24/%E5%88%9D%E8%AF%86%CE%BCCOS-%E2%85%A1/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SJ's World">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2020/12/14/git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">
-              
-                <span itemprop="name">git的简单认识与几个常用命令</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">初识 μC/OS-Ⅱ</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-12-14T16:28:50+08:00"
-              content="2020-12-14" >
-          12-14
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-03-24T16:31:08+08:00">
+                2021-03-24
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <center><strong>冲冲冲！！！</strong></center>
+
+<a id="more"></a>
+
+<p><font color='red' size='5'>μC/OS-Ⅱ 操作系统内核的主要工作就是对任务进行管理和调度。</font></p>
+<p>任务？</p>
+<p>在多道程序或多进程环境中由计算机完成的基本工作元，它是由控制程序处理的一个或多个指令序列。</p>
+<p>μC/OS-Ⅱ 就是一个能对任务的运行进行<font color='red'>管理</font>和<font color='red'>调度</font>的多任务操作系统。</p>
+<p>μC/OS-Ⅱ 的任务分为三个部分：任务程序代码(函数)、任务堆栈和任务控制块。</p>
+<p><img src="https://i.loli.net/2021/03/24/ipU9awbLkVjnlGg.png" alt="image.png"></p>
+<ul>
+<li><p>程序代码就是任务的执行函数。</p>
+</li>
+<li><p>每个任务都有自己的堆栈，来保存自身的信息。这是每个任务自己的资源。</p>
+</li>
+<li><p>任务控制块则是对任务的描述，例如任务名称、任务优先级、堆栈地址等等信息。（提供了运行环境的存储位置）。系统可以根据任务控制块来了解代码的相关信息，因此也可以找到代码。</p>
+</li>
+</ul>
+<p>指向代码的指针是 CPU 程序指针(程序计数器) PC 的副本。</p>
+<p>PC的值总是待要执行指令的地址，它反应了一个程序运行进度，所以根据任务是否具有自己的私有运行空间，人们把任务分别叫做“进程”或“线程”。<font color='green'>具体来说，具有私有空间的任务就叫做进程，没有私有空间的任务就叫做线程。</font></p>
+<p>在任务的组成上，μC/OS-Ⅱ 没有给任务定义私有空间，因此 μC/OS-Ⅱ 中所有的任务都属于线程。</p>
+<p><font color='red'>μC/OS-Ⅱ 不允许在中断服务程序中创建任务。</font></p>
+<p>任务划分原则：</p>
+<ol>
+<li><p>根据外设类型</p>
+<p>对于每个独立的硬件（例如串口通信端口）进行操作的驱动程序段放在一个任务中。</p>
+</li>
+<li><p>根据任务的优先级</p>
+</li>
+<li><p>按工作流程</p>
+</li>
+</ol>
+<p>任务的切换就是任务运行环境的切换。</p>
+<p>程序切换的关键是把程序的私有堆栈指针赋予处理器的堆栈指针SP。</p>
+<p>实质上系统是通过SP的切换来实现程序的切换。</p>
+<p>具有控制块的程序才是一个可以被系统所运行的任务。</p>
+
+      
     </div>
+    
+    
+    
+
+  
+    <div>
+    
+      <div>
+    
+        <div style="text-align:center;color: #006000;font-size:18px;">-------------END-------------</div>
+    
+</div>
+
+    
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Sheng Jie
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://sj-ruby.github.io/2021/03/24/%E5%88%9D%E8%AF%86%CE%BCCOS-%E2%85%A1/" title="初识 μC/OS-Ⅱ">https://sj-ruby.github.io/2021/03/24/%E5%88%9D%E8%AF%86%CE%BCCOS-%E2%85%A1/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%CE%BCC-OS-%E2%85%A1/" rel="tag"># μC/OS-Ⅱ</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/03/20/leetcode%E5%88%B7%E9%A2%98%E6%80%BB%E7%BB%93/" rel="next" title="leetcode刷题总结">
+                <i class="fa fa-chevron-left"></i> leetcode刷题总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/03/25/%E5%88%9D%E8%AF%86FreeRTOS/" rel="prev" title="初识 FreeRTOS">
+                初识 FreeRTOS <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -319,6 +473,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -541,11 +699,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
 
 
   
