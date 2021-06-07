@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Linux," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="~~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu&#x2F;Linux学习">
+<meta property="og:url" content="https://sj-ruby.github.io/2021/06/02/Ubuntu_Linux%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="SJ&#39;s World">
+<meta property="og:description" content="~~">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/06/02/3n79BzIZP2OENj1.png">
+<meta property="og:image" content="https://i.loli.net/2021/06/02/X2UbZgVoPSAr7N3.png">
+<meta property="article:published_time" content="2021-06-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-06-07T06:46:12.614Z">
+<meta property="article:author" content="Sheng Jie">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/06/02/3n79BzIZP2OENj1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://sj-ruby.github.io/2021/06/02/Ubuntu_Linux学习/"/>
+
+
+
+
+
+  <title>Ubuntu/Linux学习 | SJ's World</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">SJ's World</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://sj-ruby.github.io/2021/06/02/Ubuntu_Linux%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SJ's World">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Ubuntu/Linux学习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-02T00:00:00+08:00">
+                2021-06-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <center><strong>~~</strong></center>
+
+
+
+<a id="more"></a>
+
+<h2 id="一、Ubuntu-Linux磁盘文件"><a href="#一、Ubuntu-Linux磁盘文件" class="headerlink" title="一、Ubuntu/Linux磁盘文件"></a>一、Ubuntu/Linux磁盘文件</h2><p>​        ls /dev/sd* 文件，此类文件是磁盘设备文件，并不能直接访问磁盘，必须要将磁盘挂载到某一个目录下才可以访问。</p>
+<p>​        当插入磁盘设备文件（例如：U盘），会多出两个文件，其中xxx表示U盘，xxx1表示U盘的第一个分区。</p>
+<p>df：用于显示linux系统上的文件系统的磁盘使用情况统计。</p>
+<p>du：显示目录或文件的大小。</p>
+<p>​    du -h –max-depth=n    n为查看几级目录</p>
+<h2 id="二、Ubuntu-Linux文件权限"><a href="#二、Ubuntu-Linux文件权限" class="headerlink" title="二、Ubuntu/Linux文件权限"></a>二、Ubuntu/Linux文件权限</h2><p>文件权限是指不同的用户或用户组对某个文件拥有的权限，文件的权限分为三组：</p>
+<p>r：读</p>
+<p>w：写</p>
+<p>x：可执行</p>
+<p>-rw-r–r–    第一位表示文件类型，剩下的每三位表示一组权限。分别对应拥有者权限(Owner)、拥有者所在组权限(Group)、其它用户权限(Other Users)。</p>
+<p>修改文件权限命令 chmod</p>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>二进制</th>
+<th>八进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r</td>
+<td>100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>w</td>
+<td>010</td>
+<td>2</td>
+</tr>
+<tr>
+<td>x</td>
+<td>001</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>权限所对应的八进制数字是每个权限对应的位相加，比如 rwx 就是4+2+1=7。</p>
+<p>修改文件所属用户 chown</p>
+<h2 id="三、Linux-链接方式"><a href="#三、Linux-链接方式" class="headerlink" title="三、Linux 链接方式"></a>三、Linux 链接方式</h2><p>​        Linux有两种连接方式：符号链接（软链接）和硬链接；符号链接相当于Windows下的快捷方式，硬链接通过文件系统的 inode 链接来产生新文件名，而不是产生新文件。</p>
+<p>inode：记录文件属性，一个文件一个inode。inode相当于文件 ID，查找文件的时候要先找到 inode，然后才能读出文件的内容。</p>
+<p>ln 命令用于创建链接文件。</p>
+<ul>
+<li><p>硬链接</p>
+<p>硬链接是多个文件都指向同一个 inode</p>
+<ol>
+<li>​    具有相同的 inode 的多个文件互为硬链接文件，创建硬链接相当于文件多了入口。</li>
+<li>对于硬链接文件，只有删除了源文件以及对应的所有硬链接文件，文件实体才会被删除。</li>
+<li>根据硬链接文件的特点，我们可以通过给文件创建硬链接方式来防止文件误删除。</li>
+<li>不论修改源文件还是链接文件，另一个文件的数据都会被改变。</li>
+<li>硬链接不能跨文件系统。</li>
+<li>硬链接不能连接到目录。</li>
+</ol>
+</li>
+<li><p>符号链接(软链接)</p>
+<p>符号链接类似 Windows 下的快捷方式，符号链接也叫做软链接，软链接要用的多。符号链接相当于创建了一个独立的文件，这个文件会让数据读取指向它链接的哪个文件的文件名。</p>
+<ol>
+<li><p>可以链接到目录。</p>
+</li>
+<li><p>可以跨文件系统。</p>
+</li>
+<li><p>删除源文件以后，软链接文件也就”打不开了“。</p>
+</li>
+<li><p>软链接文件通过 -&gt; 来指示具体的链接方式。</p>
+</li>
+<li><p>要使用绝对路径，否则链接出问题</p>
+<p><img src="https://i.loli.net/2021/06/02/3n79BzIZP2OENj1.png" alt="image.png"></p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="四、make-和-makefile-文件的引入"><a href="#四、make-和-makefile-文件的引入" class="headerlink" title="四、make 和 makefile 文件的引入"></a>四、make 和 makefile 文件的引入</h2><h3 id="1-make-工具"><a href="#1-make-工具" class="headerlink" title="1.make 工具"></a>1.make 工具</h3><p>利用make工具自动完成编译工作，这些工作包括：</p>
+<ul>
+<li>如果修改了某几个源文件，则只重新编译这几个源文件</li>
+<li>如果某个头文件被修改了，则重新编译所有包含该头文件的源文件</li>
+</ul>
+<p>利用make可以大大简化开发工作，避免不必要的重新编译。make工具通过Makefile文件来完成并自动维护编译工作，Makefile文件描述了整个工程的编译、链接规则。</p>
+<h3 id="2-Makefile-文件"><a href="#2-Makefile-文件" class="headerlink" title="2.Makefile 文件"></a>2.Makefile 文件</h3><ul>
+<li>TARGER(目标)：目标程序产生的文件，如可执行文件和目标文件，目标也可以是要执行的动作。</li>
+<li>DEPENDENCIES(依赖文件集合)：依赖是用来产生目标的输入文件列表，一个目标通常依赖多个文件。</li>
+<li>COMMAND(命令)：命令是 make 执行的动作，每个命令行的起始字符必须为 TAB 字符。</li>
+<li>如果 DEPENDENCIES 中有一个或多个文件更新的话，COMMAND 就要执行，这就也是 Makefile 最核心的内容。</li>
+</ul>
+<p>​        模式规则中，至少在规则的目标定义中要包含 “%”，否则就是一般规则，目标中的 “%” 表示对文件名的匹配，“%” 表示长度任意的非空字符串，比如 “%.c” 就是所有的以 .c 结尾的文件，类似与通配符，a.%.c 就表示以 a. 开头，以 .c 结束的所有文件。</p>
+<p>​        模式规则中，目标和依赖都是一系列的文件，每一次对模式规则进行解析的时候都会是不同的目标和依赖文件，而命令只有一行，使用<font color='red'>自动化变量</font>生成一行命令来从不同的依赖文件中对应的目标。所谓自动化变量就是这种变量会把模式中定义的一系列的文件自动的挨个取出，直至所以的符合模式的文件都取完。不二传感器 编码器 光电传感器</p>
+<h2 id="五、shell脚本"><a href="#五、shell脚本" class="headerlink" title="五、shell脚本"></a>五、shell脚本</h2><p>shell 脚本类似 windows 的批处理文件，shell 脚本就是将连续执行的命令写成一个文件。</p>
+<p>shell 脚本提供数组、循环、条件判断等功能。</p>
+<p>shell 脚本的扩展名 .sh</p>
+<p>shell 脚本第一行一定要为</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="六、Ubuntu-和-Windows-文件互传"><a href="#六、Ubuntu-和-Windows-文件互传" class="headerlink" title="六、Ubuntu 和 Windows 文件互传"></a>六、Ubuntu 和 Windows 文件互传</h2><h3 id="1-开启-Ubuntu-下的-FTP-服务"><a href="#1-开启-Ubuntu-下的-FTP-服务" class="headerlink" title="1. 开启 Ubuntu 下的 FTP 服务"></a>1. 开启 Ubuntu 下的 FTP 服务</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install vsftpd</span><br><span class="line">sudo vi /etc/vsftpd.conf</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/06/02/X2UbZgVoPSAr7N3.png" alt="image.png"></p>
+<p>修改完 vsftpd.conf 以后保存退出，重启 FTP 服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/vsftpd restart</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-开启-Ubuntu-下的-NFS-服务"><a href="#2-开启-Ubuntu-下的-NFS-服务" class="headerlink" title="2.开启 Ubuntu 下的 NFS 服务"></a>2.开启 Ubuntu 下的 NFS 服务</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nfs-kernel-server portmap</span><br></pre></td></tr></table></figure>
+
+<p>创建 nfs 文件夹供 nfs 服务器使用，先配置 nfs</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/exports</span><br></pre></td></tr></table></figure>
+
+<p>在里边添加 nfs 文件夹的绝对路径加 *(rw,sync,no_root_squash)</p>
+<p>重启 NFS 服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/nfs-kernel-server restart</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-开启-Ubuntu-下的-SSH-服务"><a href="#3-开启-Ubuntu-下的-SSH-服务" class="headerlink" title="3.开启 Ubuntu 下的 SSH 服务"></a>3.开启 Ubuntu 下的 SSH 服务</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openssh-server</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="七、Ubuntu-交叉编译器"><a href="#七、Ubuntu-交叉编译器" class="headerlink" title="七、Ubuntu 交叉编译器"></a>七、Ubuntu 交叉编译器</h2><p>交叉编译器：在一种计算机环境中运行的编译程序，能编译出在另外一种环境下运行的代码。</p>
+<p>在 Linux 下进行 C 程序开发， 我们使用的 gcc 编译器进行代码的编译， 编译完成，直接在 X86 架构下的 PC 下运行的。 而 arm 架构的， 所以我们需要使用支持 arm 的编译器并且该编译器在 X86 架构下运行， 这个编译器我们通常称为交叉编译器。</p>
+
+      
+    </div>
+    
+    
+    
+
+  
+    <div>
+    
+      <div>
+    
+        <div style="text-align:center;color: #006000;font-size:18px;">-------------END-------------</div>
+    
+</div>
+
+    
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Sheng Jie
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://sj-ruby.github.io/2021/06/02/Ubuntu_Linux%E5%AD%A6%E4%B9%A0/" title="Ubuntu/Linux学习">https://sj-ruby.github.io/2021/06/02/Ubuntu_Linux%E5%AD%A6%E4%B9%A0/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/06/01/Linux%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="next" title="Linux基础学习">
+                <i class="fa fa-chevron-left"></i> Linux基础学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/head.jpg"
+               alt="" />
+          <p class="site-author-name" itemprop="name"></p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/SJ-Ruby" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81Ubuntu-Linux%E7%A3%81%E7%9B%98%E6%96%87%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">一、Ubuntu&#x2F;Linux磁盘文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81Ubuntu-Linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="nav-number">2.</span> <span class="nav-text">二、Ubuntu&#x2F;Linux文件权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81Linux-%E9%93%BE%E6%8E%A5%E6%96%B9%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">三、Linux 链接方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81make-%E5%92%8C-makefile-%E6%96%87%E4%BB%B6%E7%9A%84%E5%BC%95%E5%85%A5"><span class="nav-number">4.</span> <span class="nav-text">四、make 和 makefile 文件的引入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-make-%E5%B7%A5%E5%85%B7"><span class="nav-number">4.1.</span> <span class="nav-text">1.make 工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Makefile-%E6%96%87%E4%BB%B6"><span class="nav-number">4.2.</span> <span class="nav-text">2.Makefile 文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81shell%E8%84%9A%E6%9C%AC"><span class="nav-number">5.</span> <span class="nav-text">五、shell脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81Ubuntu-%E5%92%8C-Windows-%E6%96%87%E4%BB%B6%E4%BA%92%E4%BC%A0"><span class="nav-number">6.</span> <span class="nav-text">六、Ubuntu 和 Windows 文件互传</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%BC%80%E5%90%AF-Ubuntu-%E4%B8%8B%E7%9A%84-FTP-%E6%9C%8D%E5%8A%A1"><span class="nav-number">6.1.</span> <span class="nav-text">1. 开启 Ubuntu 下的 FTP 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%BC%80%E5%90%AF-Ubuntu-%E4%B8%8B%E7%9A%84-NFS-%E6%9C%8D%E5%8A%A1"><span class="nav-number">6.2.</span> <span class="nav-text">2.开启 Ubuntu 下的 NFS 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%BC%80%E5%90%AF-Ubuntu-%E4%B8%8B%E7%9A%84-SSH-%E6%9C%8D%E5%8A%A1"><span class="nav-number">6.3.</span> <span class="nav-text">3.开启 Ubuntu 下的 SSH 服务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81Ubuntu-%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%99%A8"><span class="nav-number">7.</span> <span class="nav-text">七、Ubuntu 交叉编译器</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2020 - 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sheng Jie</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
